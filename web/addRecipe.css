@@ -1,0 +1,117 @@
+/* http://www.456bereastreet.com/lab/developing_with_web_standards/csslayout/2-col/ */
+
+body,
+html {
+    margin:0;
+    padding:0;
+    color:#000;
+    background: black;
+    font: normal Helvetica Neue,Helvetica,sans-serif;
+}
+
+a:link {color: #000000; text-decoration: underline; }
+a:active {color: #0000ff; text-decoration: underline; }
+a:visited {color: #300000; text-decoration: underline; }
+a:hover {color: #ff0000; text-decoration: none; }
+
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#wrap {
+    width:1200px;
+    margin:0 auto;
+    background:#E0E0E0;
+
+}
+
+#header {
+    padding:5px 10px;
+    background:gray;
+    border: dashed;
+}
+
+h2 {
+    margin:0;
+    text-align:center;
+}
+
+#nav {
+    padding:5px 10px;
+    background:#A0A0A0;
+    border-left: solid thin;
+    border-right: solid thin;
+    border-bottom: solid thin;
+    text-align: center;
+}
+
+#center {
+    float:left;
+    width:800px;
+    padding:10px;
+    padding-right:4px;
+    padding-left:10px;
+}
+
+h2 {
+    margin:0 0 1em;
+}
+
+#footer {
+    clear:both;
+    padding:5px 10px;
+    background:gray;
+    text-align:center;
+    border: solid;
+    border-width: thin;
+}
+
+#footer p {
+    margin:0;
+}
+
+* html #footer {
+    height:1px;
+}
+
+#nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#nav li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+/* http://pythoughts.com/table-style-css/ */
+#table-5 {
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #ebebeb;
+}
+#table-5 td, #table-5 th {
+    padding: 1px 5px;
+}
+#table-5 thead {
+    font: normal 18px Helvetica Neue,Helvetica,sans-serif;
+    text-shadow: 0 1px 0 white;
+    color: #999;
+}
+#table-5 th {
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+#table-5 td {
+    height:40px;
+    font-size: 17px;
+}
+#table-5 td:hover {
+    background-color: #fff;
+}

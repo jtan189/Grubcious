@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- more info at http://wiki.cs.ndsu.nodak.edu/classes/csci366/howto_helloworldservlet -->
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <!-- begin testers -->
+    <servlet>
+        <servlet-name>Hello World</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello World</servlet-name>
+        <url-pattern>/servlet/HelloWorld</url-pattern>
+    </servlet-mapping>
+    <!-- end testers -->
+    <servlet>
+        <servlet-name>Grub</servlet-name>
+        <servlet-class>controller.Control</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Grub</servlet-name>
+        <url-pattern>/servlet/grub</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginOrRegister</servlet-name>
+        <servlet-class>controller.LoginOrRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginOrRegister</servlet-name>
+        <url-pattern>/servlet/grub/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/servlet/grub/loginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/servlet/grub/registerservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/servlet/grub/logoutservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddRecipe</servlet-name>
+        <servlet-class>controller.AddRecipe</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRecipe</servlet-name>
+        <url-pattern>/servlet/grub/addrecipe</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddRecipeServlet</servlet-name>
+        <servlet-class>controller.AddRecipeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRecipeServlet</servlet-name>
+        <url-pattern>/servlet/grub/addrecipeservlet</url-pattern>
+    </servlet-mapping> 
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <servlet-class>controller.Search</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/servlet/grub/search</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>controller.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/servlet/grub/searchresults</url-pattern>
+    </servlet-mapping>
+    <!-- will have another servlet mapping for serving images from DB -->
+</web-app>
