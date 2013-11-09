@@ -7,8 +7,9 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
-# class files
+# binaries
 *.class
+lib/
 
 # package files
 *.jar
